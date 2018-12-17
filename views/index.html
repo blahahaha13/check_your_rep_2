@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Check Your Rep!</title>
+    <!-- Favicon -->
+    <link rel="icon" type="favicon/png" href="/images/favicon.png">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- USER style -->
+	<link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="navbar transparent navbar-inverse navbar-fixed-top">
+        <nav class="navbar-inner">
+            <i id="hamburger" class="fas fa-bars fa-3x"></i>
+                <!-- Add Counter to LETTERS -->
+                  <div id="letter-container">
+                    <div id="letter">
+                    <i class="far fa-file-alt fa-2x" onclick="window.location.href='/profile'"></i>
+                    </div>
+                  <span id="letterCount"></span>
+                </div>
+                <!-- clos eadd to letters -->
+                <ul>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+        </nav>
+    </div>
+
+    <div class="col-md-6 left">
+        <header>
+            <img src="/images/branding.svg" alt="Check Your Rep!" class="logo" />
+        </header>
+        <h2>THE APP THAT ALLOWS USERS<br/>
+        to find all their representatives.</h2>
+        <!-- <p>...and even contact them!</p> -->
+        <div class="formElement">
+            <form id="form">
+                <!-- onclick="window.location.href='/results'" -->
+                <input type="text" pattern="[0-9]{5}" title="Five digit zip code" id="userData" name="data" maxlength="5" placeholder="Search by ZIP Code" required />
+                <button type="submit" id="userSubmit" name="submit" value="Check Your Rep!"></i><img src="/images/check-icon.svg" alt="check image" class="check" /> Check Your Rep!</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="col-md-6 right">
+        <img src="/images/iphone.png" alt="iphone with Check Your Rep mobile app!" />
+    </div>
+
+
+
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+	<script src="/jquery.js"></script>
+	<script src="scripts/app.js"></script>
+</body>
+</html>

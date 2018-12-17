@@ -1,0 +1,693 @@
+body {
+    width: 100wh;
+    height: 90vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease-in-out;
+    -moz-animation: Gradient 15s ease-in-out;
+    animation: Gradient 15s ease-in-out;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.bg-norm {
+    background: linear-gradient(-45deg #E73C7E, #23A6D5);
+    background-size: cover;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+
+.bg-pro {
+    background: linear-gradient(-45deg #E73C7E, #23A6D5);
+    background-size: cover;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+/* ======================
+WEBFONTS
+======================
+*/
+
+@font-face {
+    font-family: 'comfortaabold';
+    src: url('./fonts/comfortaa-bold.woff2') format('woff2'),
+         url('./fonts/comfortaa-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'comfortaalight';
+    src: url('./fonts/comfortaa-light.woff2') format('woff2'),
+         url('./fonts/comfortaa-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'comfortaaregular';
+    src: url('./fonts/comfortaa-regular.woff2') format('woff2'),
+         url('./comfortaa-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ======================
+TEXT STYLES
+======================
+*/
+
+h1 {
+    font-family: 'comfortaabold';
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+}
+
+h2 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 2.65em;
+    color: #fff;
+}
+
+h3 {
+    font-family: 'comfortaalight';
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+}
+
+h4, h5, h6 {
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: none;
+    color: #fff;
+}
+
+/* ======================
+BG Animation
+======================
+*/
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* ======================
+Layout
+======================
+*/
+
+.navbar.transparent.navbar-inverse .navbar-inner {
+    background: rgba(0,0,0,0.0);
+}
+
+.navbar {
+    padding-top: 15px;
+    background: none;
+    border: none;
+}
+
+.navbar-default {
+    background: none;
+}
+
+ul {
+    text-align: right;
+}
+
+ul li {
+    display: inline-block;
+    padding: 15px 15px;
+    list-style: none;
+}
+
+li a {
+    color: #fff;
+    transition: border .75s ease-in-out;
+}
+
+li a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    /*border-radius: 30px;*/
+    /*padding: 10px 30px;*/
+}
+
+header {
+    margin: 50px 0;
+}
+
+.bg-pro header {
+    margin: 0px 0;
+}
+
+.bg-norm header {
+    margin: 0px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.mobile-hide {
+    display: block;
+}
+
+@media screen and (max-width: 575px) {
+  .mobile-hide {
+    display: none;
+  }
+}
+
+.mobile-show {
+    display: none;
+}
+
+@media screen and (max-width: 575px) {
+  .mobile-show {
+    display: block;
+  }
+}
+
+.pad {
+    padding: 8.75%;
+}
+
+#hamburger  {
+    color: #fff;
+    text-align: right;
+    padding: 0 20px 20px 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: color .65s ease-in-out;
+}
+
+@media screen and (max-width: 575px) {
+  #hamburger {
+    top: 5px;
+    right: 0px;
+    font-size: 30px;
+  }
+}
+
+#leter i:hover {
+    color: ##23A6D5;
+}
+
+#letter i {
+    transition: color .5s ease-in-out;
+    cursor: pointer;
+}
+
+/*#hamburger:hover  {
+    color: #23A6D5;
+}*/
+
+
+/* ======================
+Form Elements
+======================
+*/
+
+.formElement {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+form {
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    text-shadow: none;
+}
+
+input {
+    color: #fff;
+    width: 85%;
+    font-family: 'comfortaaregular';
+    margin: 30px auto;
+    text-align: center;
+    /*line-height: 65px;*/
+    background-color: rgba(255,255,255,0.25);
+    padding: 20px 55px 15px 55px;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 4px;
+    /*filter: drop-shadow(2px 2px 2px blue);*/
+    font-size: 20px;
+    letter-spacing: .05em;
+    transition: all .5s ease-in-out;
+    text-transform: uppercase;
+}
+
+input[type="text"]:focus {
+    margin: 30px auto;
+    font-family: 'comfortaabold';
+    box-shadow: 0px 0px 5px rgba(255,255,255,0.75);
+    border: 2px solid rgba(255,255,255,0.5);
+    font-size: 26px;
+}
+
+button{
+    font-family: 'comfortaalight';
+    letter-spacing: .1em;
+    margin: 0 auto;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 12px 45px 8px 45px;
+    filter: drop-shadow(3px 2px 2px grey);
+    border-radius: 35px;
+    border: none;
+    outline: none;
+    background-color: #23A6D5;
+    opacity: .85;
+    transition: all .15s ease-in-out;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: rgba(255,255,255,0.25);
+    border: 2px solid grey,
+    opacity: .55;
+    color: #fff;
+}
+
+ /* unvisited link on click */
+button:active {
+    background-color: #E73C7E;
+    border: 2px solid grey,
+    opacity: .55;
+    color: #fff;
+}
+
+/* visited link */
+button:visited {
+   background-color: #23D5AB;
+    border: 2px solid grey,
+    opacity: .55;
+    color: #fff;
+}
+
+.left {
+    padding: 50px 25px;
+}
+
+.right{
+    padding: 25px;
+}
+
+.logo {
+    margin: 0 0 100px 0;
+}
+
+/*
+==================================
+ ----CARD STUFF ---
+==================================
+ */
+
+.card-body {
+    color: #333;
+    width: 90%;
+    margin: 5px auto;
+    background-color: rgba(255, 255, 255, 0.65);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.card {
+   width: 29.33%;
+   box-sizing: border-box;
+   background-color: rgba(255, 255, 255, 0.35);
+   border-radius: 5px;
+   margin: 15px 20px;
+   filter: drop-shadow(3px 2px 2px grey);
+   border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    width: 45.33%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .card {
+    width: 42.33%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .card {
+    width: 85.33%;
+  }
+}
+
+.center {
+    text-align: center;
+}
+
+.clip-circle {
+  clip-path: circle(90px at center);
+}
+
+.smaller {
+    width: 180px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.card img {
+    margin-left: 25%;
+    margin-top: 10px;
+}
+
+
+/*.image-cropper {
+    max-width: 100px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-cropper img{
+    display: block;
+    margin: 0 auto;
+    padding: 0 auto;
+
+    height: auto;
+    width: 150%;
+    margin: 0 0 0 -20%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}*/
+
+.social i {
+    display: inline;
+    position: relative;
+    top: inherit;
+    left: inherit;
+    padding: 0 0 0 10px;
+    margin: 15px 0 25px 10px;
+    text-align: center;
+    color: #23A6D5;
+    transition: color .75s ease-in-out;
+}
+
+.social i:hover {
+    color: #000;
+}
+
+.card-text {
+    font-family: 'comfortaabold';
+    color: #333;
+    font-size: 1.35em;
+}
+
+.btn-group {
+margin: 25px 0;
+}
+
+.jumbotron {
+    background-color: #23A6D5;
+}
+
+.logo2 {
+    width: 25%;
+    margin: 10px 0 0 30px;
+}
+
+.bg-norm .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    border-radius: 8px;
+    filter: drop-shadow(3px 3px 3px #lightgrey);
+    margin: -100px 25px 25px 0;
+}
+
+.profile-info {
+    text-align: left;
+    font-size: 150%;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+.pro-title {
+    color: #fff;
+    text-align: left;
+}
+
+/*
+==================================
+ ----PROFILE PAGE FORM STUFF ---
+==================================
+ */
+.form-profile{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 90%;
+    margin: 130px auto 0 auto;
+    padding: 16px;
+    background: #F7F7F7;
+    border-radius: 8px;
+    text-align: left;
+    filter: drop-shadow(3px 3px 3px lightgrey);
+/*    border-left: 2px solid #ccc;*/
+}
+
+.form-profile h1{
+    background: #43D1AF;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+
+.form-profile input[type="text"],
+.form-profile input[type="date"],
+.form-profile input[type="datetime"],
+.form-profile input[type="email"],
+.form-profile input[type="number"],
+.form-profile input[type="search"],
+.form-profile input[type="time"],
+.form-profile input[type="url"],
+.form-profile textarea,
+.form-profile select
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.form-profile input[type="text"]:focus,
+.form-profile input[type="date"]:focus,
+.form-profile input[type="datetime"]:focus,
+.form-profile input[type="email"]:focus,
+.form-profile input[type="number"]:focus,
+.form-profile input[type="search"]:focus,
+.form-profile input[type="time"]:focus,
+.form-profile input[type="url"]:focus,
+.form-profile textarea:focus,
+.form-profile select:focus
+{
+    box-shadow: 0 0 5px #43D1AF;
+    padding: 3%;
+    border: 1px solid #43D1AF;
+}
+
+.form-profile input[type="submit"],
+.form-profile input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #43D1AF;
+    border-bottom: 2px solid #30C29E;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+}
+.form-profile input[type="submit"]:hover,
+.form-profile input[type="button"]:hover{
+    background: #2EBC99;
+}
+
+.form-profile textarea {
+    min-height: 150px;
+}
+
+/* ------------------
+End profile form
+---------------------*/
+
+/*==================================
+ ----ADD COUNTER TO CART STYLE ---
+==================================*/
+#letter-container {
+  float: right;
+  width: 210px;
+  padding:0;
+  position: relative;
+}
+
+#letterCount {
+  position: absolute;
+  display: none;
+  top: -10px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  text-align: center;
+}
+
+.letter {
+  width: 31%;
+  float: left;
+  margin: 1%;
+}
+/*==================================
+==================================*/
+
+.edit-letter {
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: opacity .75s ease-in-out;
+}
+
+.edit-letter:hover {
+    opacity: .65;
+}
+
+.check {
+    height: 30px;
+    width: 30px;
+}
+
+.check:hover {
+    color: #E73C7E;
+}
+
+.check:active {
+    color:#blue;
+}
+
+input:required {
+    border: none;
+    outline: none;
+}
+
+input:required:focus {
+  border: none;
+  outline: none;
+}
+
+:invalid {
+  box-shadow: none;
+}
+
+:-moz-submit-invalid {
+  box-shadow: none;
+}
+
+:-moz-ui-invalid {
+  box-shadow:none;
+}
+
+/* -- HIDDEN form on reuslts page */
+.revealCard {
+    flex: 1;
+}
+.hidden {
+    height: 0;
+    transition: height 1s ease-in-out;
+}
+.show {
+    display: block;
+}
+
+@media screen and (max-width: 575px) {
+  #letter-container {
+    display: none;
+  }
+  ul, ul {
+    display: none;
+  }
+  h1 {
+    margin: 0px auto;
+   }
+}
+

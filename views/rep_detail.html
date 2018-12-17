@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Your Rep!</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- USER style -->
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+    <meta charset="UTF-8">
+</head>
+
+<body class="bg-pro">
+    <div class="navbar transparent navbar-inverse navbar-fixed-top">
+        <nav class="navbar-inner">
+            <i id="hamburger" class="fas fa-bars fa-3x"></i>
+                <!-- Add Counter to LETTERS -->
+                  <div id="letter-container">
+                    <div id="letter">
+                    <i class="far fa-file-alt fa-2x"></i><!--onclick="window.location.href='/profile'-->
+                    </div>
+                  <span id="letterCount"></span>
+                </div>
+                <!-- clos eadd to letters -->
+                <ul>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+        </nav>
+    </div>
+    <div class="col-md-6 left">
+        <header>
+            <img src="/images/branding.png" alt="" class="logo" />
+        </header>
+        <div class="profile-info">
+            <img src="/images/headshot2.jpg" alt="" class="profile-pic" />
+            <h3 class="card-text pro-title">First Name, Last Name</h3>
+                  <p>Representative, STATE, (D)</p>
+                  <p>1234 Address St. Location, USA</p>
+                  <p>(555) 555 - 5555</p>
+                  <p>www.go-vote-alt-left.com</p>
+                    <div class="social">
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-facebook"></i>
+                      <i class="fab fa-instagram"></i>
+                      <i class="fab fa-linkedin"></i>
+                    </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 right">
+        <div class="form-profile">
+            <h1>Check Your Rep- Send a letter...</h1>
+            <form>
+            <input type="text" name="field1" placeholder="Your Name" />
+            <input type="email" name="field2" placeholder="Email Address" />
+            <textarea name="field3" placeholder="Dear Representative..."></textarea>
+            <input type="submit" value="Send Letter" class="add" />
+            </form>
+        </div>
+    </div>
+
+<!-- Latest compiled and minified JavaScript -->
+   <!--  <script src="../config.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+    <script src="/jquery.js"></script>
+    <script src="/scripts/app.js"></script>
+</body>
+</html>
